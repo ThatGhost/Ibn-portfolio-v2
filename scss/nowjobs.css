@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Goldman", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.intro {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.intro h1 {
+  font-size: 4vw;
+}
+.intro h2 {
+  font-size: 2vw;
+}
+.intro #cvs {
+  position: absolute;
+  z-index: -1;
+}
+
+.paragraph {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 90%;
+  padding: 5%;
+}
+
+.cards {
+  width: 90%;
+  height: 100vh;
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 3%;
+}
+.cards .card {
+  border: 3px solid white;
+  border-radius: 15px;
+}/*# sourceMappingURL=nowjobs.css.map */

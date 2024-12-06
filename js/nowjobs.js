@@ -26,7 +26,7 @@ function initialize() {
     ctx = canvas.getContext("2d");
 
     // dimensions
-    h = document.documentElement.clientHeight;
+    h = document.documentElement.clientHeight * 0.18;
     w = document.documentElement.clientWidth;
     canvas.height = h;
     canvas.width = w;
@@ -34,7 +34,7 @@ function initialize() {
     // colours and lines
     ctx.fillStyle = COLOR_BG;
     ctx.strokeStyle = COLOR_CUBE;
-    ctx.lineWidth = w / 100;
+    ctx.lineWidth = w / 200;
     ctx.lineCap = "round";
 
     // cube parameters

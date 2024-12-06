@@ -36,23 +36,23 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3%;
 }
-.experience section {
+.experience a {
   border: 3px solid white;
   padding: 3%;
   border-radius: 20px;
   position: relative;
 }
-.experience section:hover {
+.experience a:hover {
   box-shadow: 0px 0px 5px 5px white;
   border: none;
 }
-.experience section:hover h1, .experience section:hover h2, .experience section:hover span {
+.experience a:hover h1, .experience a:hover h2, .experience a:hover span {
   color: black;
 }
-.experience section:hover img {
+.experience a:hover img {
   opacity: 1;
 }
-.experience section img {
+.experience a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,38 +63,38 @@ body {
   width: 100%;
   border-radius: 17px;
 }
-.experience section h1 {
+.experience a h1 {
   font-size: 3vw;
   height: 12%;
 }
-.experience section h2 {
+.experience a h2 {
   height: 10%;
   font-size: 2vw;
 }
-.experience section p {
+.experience a p {
   margin-top: 10%;
   height: 7%;
   font-size: 1.5vw;
   width: 93%;
 }
-.experience section .scrolling {
+.experience a .scrolling {
   white-space: nowrap;
   overflow: hidden;
   position: absolute;
 }
-.experience section .scrolling span {
+.experience a .scrolling span {
   display: inline-block;
   padding-left: 145%;
   animation: marquee 15s linear infinite;
 }
-.experience section .broodbank span {
+.experience a .broodbank span {
   padding-left: 170%;
   animation: marquee 15s linear infinite;
 }
-.experience section .scrolling2 span {
+.experience a .scrolling2 span {
   animation-delay: -7.5s;
 }
-.experience section .graduate span {
+.experience a .graduate span {
   padding-left: 150%;
 }
 
