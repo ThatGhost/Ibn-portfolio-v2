@@ -4,7 +4,7 @@ window.addEventListener('load',initialize);
 
 
 const COLOR_BG = "black";
-const COLOR_CUBE = "gray";
+let COLOR_CUBE = "gray";
 const SPEED_X = 0.05; // rps
 const SPEED_Y = 0.15; // rps
 const SPEED_Z = 0.10; // rps
@@ -24,6 +24,8 @@ function initialize() {
     // set up the canvas and context
     var canvas = document.querySelector("#cvs")
     ctx = canvas.getContext("2d");
+    document.querySelector("#middle").addEventListener("mouseenter", (e) => COLOR_CUBE = "white");
+    document.querySelector("#middle").addEventListener("mouseleave", (e) => COLOR_CUBE = "gray");
 
     // dimensions
     h = document.documentElement.clientHeight * 0.18;
@@ -38,10 +40,10 @@ function initialize() {
     ctx.lineCap = "round";
 
     // cube parameters
-    var cx = w / 2;
-    var cy = h / 2;
     var cz = 0;
     var size = h / 3.5;
+    var cy = h / 2;
+    var cx = w / 2;
     vertices = [
         new POINT3D(cx - size, cy - size, cz - size),
         new POINT3D(cx + size, cy - size, cz - size),
@@ -59,6 +61,7 @@ function loop(timeNow) {
     var cx = w / 2;
     var cy = h / 2;
     var cz = 0;
+    ctx.strokeStyle = COLOR_CUBE;
 
     // calculate the time difference
     timeDelta = timeNow - timeLast;
